@@ -1,0 +1,24 @@
+//המרה בין בסיס בינארי לעשרוני
+#include <stdio.h>
+#include <math.h>
+
+void main() {
+    int a, b, count = 0, i, sum = 0, p = 0;
+    printf("Enter a binary number:");
+    scanf("%d", & a); {
+      b = a;
+      while (a != 0) {
+        a = a / 10;
+        count++;
+
+      }
+    }
+    while (b != 0) {
+      if (b % 10 == 1)
+        sum += pow(2, p);
+      p++;
+      b = b / 10;
+    }
+    printf("The decimal value is=%d", sum);
+
+  }
